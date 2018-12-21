@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  {{ partial "header.html" . }}
+  <body>
+
+  <main>
+    <div id="main_container">
+      <div id="main">
+        {{ .Content }}
+      </div>
+      <aside id="sidebar">
+        <section>
+          <h3>{{ .Site.Title }}</h3>
+        </section>
+        <section>
+          <p>
+            <a href="https://engelbart.eu/blog">blog</a>
+          </p>
+          <p>
+            <a href="https://engelbart.eu/reading">ReadingStack</a>
+          </p>
+          <p>
+            <a href="https://twitter.com/mengelbart">twitter</a>
+          </p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>
