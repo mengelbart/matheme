@@ -2,28 +2,35 @@
 
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 300px;
-}
-
-#main_container {
+  font-family: 'PT Sans', sans-serif;
   position: relative;
+  min-height: 100%;
 }
 
-#main {
+#main, header, footer, #sidebar {
   margin: auto;
   max-width: 30em;
-  margin-left: 300px;
 }
 
-#sidebar {
-  width: 215px;
+body {
+  margin-bottom: 50px;
+}
+
+footer {
   position: absolute;
-  top: 0px;
-  margin-left: 50px;
+  bottom: 0;
+}
+
+@media(min-width: 880px) {
+  #main_container {
+    position: relative;
+  }
+
+  #sidebar {
+    max-width: 10em;
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    margin-left: 20px;
+  }
 }
