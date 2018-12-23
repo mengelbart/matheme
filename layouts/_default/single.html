@@ -2,6 +2,7 @@
 {{ define "main" }}
 <section>
   <h1 id="title">{{ .Title }}</h1>
+  <small>{{ .Date.Format "January 02, 2006" }}</small>
   {{ .Content }}
   </section>
 {{ end }}
