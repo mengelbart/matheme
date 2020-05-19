@@ -9,12 +9,12 @@ html {
 
 #main, header, footer, #sidebar {
   margin: auto;
-  max-width: 30em;
+  max-width: 35em;
 }
 
 body {
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 footer {
@@ -38,4 +38,11 @@ footer {
 
 p {
   text-align: justify;
+}
+
+pre {
+  padding: 10px;
+  border: 1px solid #e1e1e8;
+  border-radius: 5px;
+  font-size: 14px;
 }
