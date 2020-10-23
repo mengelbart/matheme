@@ -8,11 +8,11 @@
         <div id="main_container">
           <div id="main">
             {{ .Content }}
-	    {{ range .Site.RegularPages }}
-	      <h2 id="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-	      <small><time>{{ .Date.Format "January 2, 2006" }}</time></small>
-	      {{ .Content }}
-	    {{ end }}
+            {{ range .Site.RegularPages }}
+              <h2 id="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <small><time>{{ .Date.Format "January 2, 2006" }}</time></small>
+              {{ .Content }}
+            {{ end }}
           </div>
           {{ partial "sidebar.html" . }}
         </div>
